@@ -7,6 +7,9 @@
   "engines": {
     "node": ">=18"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Kiran Gadhave",
   "repository": {
     "type": "git",
