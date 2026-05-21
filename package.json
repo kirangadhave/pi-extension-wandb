@@ -4,6 +4,9 @@
   "description": "pi coding agent extension that adds Weights & Biases Inference as a model provider.",
   "type": "module",
   "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
   "author": "Kiran Gadhave",
   "repository": {
     "type": "git",
