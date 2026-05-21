@@ -34,8 +34,16 @@ pi --list-models | grep wandb
 
 ## Use
 
+Smoke test (cheap model, should print `Pong`):
+
 ```bash
-pi --provider wandb --model deepseek-ai/DeepSeek-V3.1 "hello"
+pi -p --no-tools --provider wandb --model microsoft/Phi-4-mini-instruct "Reply with exactly the word Pong and nothing else."
+```
+
+Interactive coding session with a larger model:
+
+```bash
+pi --provider wandb --model deepseek-ai/DeepSeek-V3.1
 ```
 
 ## Configuration
