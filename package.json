@@ -1,0 +1,46 @@
+{
+  "name": "pi-extension-wandb",
+  "version": "0.1.0",
+  "description": "pi coding agent extension that adds Weights & Biases Inference as a model provider.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Kiran Gadhave",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirangadhave/pi-extension-wandb.git"
+  },
+  "homepage": "https://github.com/kirangadhave/pi-extension-wandb",
+  "bugs": {
+    "url": "https://github.com/kirangadhave/pi-extension-wandb/issues"
+  },
+  "keywords": [
+    "pi",
+    "pi-extension",
+    "pi-coding-agent",
+    "wandb",
+    "weights-and-biases",
+    "inference",
+    "llm",
+    "provider"
+  ],
+  "files": [
+    "index.ts",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "clean": "echo 'nothing to clean'",
+    "build": "echo 'nothing to build'",
+    "check": "tsc --noEmit"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.75.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
