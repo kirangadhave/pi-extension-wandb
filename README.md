@@ -33,7 +33,7 @@ pi --provider wandb --model deepseek-ai/DeepSeek-V3.1 "hello"
 | Env var | Required | Notes |
 | --- | --- | --- |
 | `WANDB_API_KEY` | yes | From <https://wandb.ai/authorize>. If unset, the provider is silently skipped (no `wandb/*` models appear in `--list-models`). |
-| `WANDB_PROJECT` | no | Sent as the `OpenAI-Project` header. Format: `team/project`. Required by some W&B accounts. |
+| `WANDB_PROJECT` | no\* | Sent as the `OpenAI-Project` header. Format: `team/project`. **If you belong to multiple W&B teams, set this explicitly** &mdash; otherwise W&B picks a default team for attribution, which can land usage on the wrong team. Single-team users can safely omit. |
 | `WANDB_DEBUG` | no | `1` enables stderr logging from the extension (fetch errors, cache hits, etc.). |
 | `WANDB_NO_CACHE` | no | `1` bypasses the model-list cache and fetches fresh on every pi startup. |
 
