@@ -7,16 +7,24 @@ provider. Model list is discovered dynamically from W&B's OpenAI-compatible
 
 ## Install
 
-Get an API key from <https://wandb.ai/authorize>, then:
+Get an API key from <https://wandb.ai/authorize>. Set the required env vars:
 
 ```bash
 export WANDB_API_KEY=...               # required
 export WANDB_PROJECT=team/project      # optional, recommended
+```
 
+Then install:
+
+```bash
 pi install npm:pi-extension-wandb
 ```
 
-The package is published on npm with [provenance](https://docs.npmjs.com/generating-provenance-statements) (built from this repo via GitHub Actions). You can also install directly from the GitHub repo with `pi install https://github.com/kirangadhave/pi-extension-wandb` if you want the latest `main`.
+The package is published on npm with [provenance](https://docs.npmjs.com/generating-provenance-statements) (built from this repo via GitHub Actions). To track `main` instead, install from the GitHub repo:
+
+```bash
+pi install https://github.com/kirangadhave/pi-extension-wandb
+```
 
 Verify:
 
