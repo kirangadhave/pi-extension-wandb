@@ -13,8 +13,10 @@ Get an API key from <https://wandb.ai/authorize>, then:
 export WANDB_API_KEY=...               # required
 export WANDB_PROJECT=team/project      # optional, recommended
 
-pi install https://github.com/kirangadhave/pi-extension-wandb
+pi install npm:pi-extension-wandb
 ```
+
+The package is published on npm with [provenance](https://docs.npmjs.com/generating-provenance-statements) (built from this repo via GitHub Actions). You can also install directly from the GitHub repo with `pi install https://github.com/kirangadhave/pi-extension-wandb` if you want the latest `main`.
 
 Verify:
 
